@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp"
+
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/wishlist_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/snacks" />
+        <TextView
+            android:id="@+id/wishlist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wishlist_title"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/wishlist_image"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"/>
+        <TextView
+            android:id="@+id/wishlist_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_below="@+id/wishlist_title"
+            android:layout_toEndOf="@+id/wishlist_image"
+            android:paddingStart="10dp"/>
+        <TextView
+            android:id="@+id/wishlist_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MRP :₹"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_below="@+id/wishlist_qty"
+            android:layout_toEndOf="@+id/wishlist_image"
+            android:paddingStart="10dp"/>
+        <TextView
+            android:id="@+id/wishlist_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="165"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:layout_below="@+id/wishlist_qty"
+            android:layout_toEndOf="@+id/wishlist_symbol" />
+
+        <TextView
+            android:id="@+id/wishlist_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rupee_symbol"
+            android:textColor="@color/colorDiscount"
+            android:textSize="15sp"
+            android:layout_below="@+id/wishlist_qty"
+            android:layout_toEndOf="@+id/wishlist_price1"
+
+            android:paddingStart="10dp"/>
+        <TextView
+            android:id="@+id/wishlist_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textColor="@color/colorDiscount"
+            android:textSize="15sp"
+            android:layout_below="@+id/wishlist_qty"
+            android:layout_toEndOf="@+id/wishlist_discount" />
+        <TextView
+            android:id="@+id/wishlist_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/wishlist_qty"
+            android:layout_toEndOf="@+id/wishlist_discount_price" />
+        <TextView
+            android:id="@+id/wishlist_offer_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="% Offer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/wishlist_qty"
+            android:layout_toEndOf="@+id/wishlist_offer" />
+
+        <TextView
+            android:id="@+id/wishlist_OOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out Of Stock"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:layout_below="@+id/wishlist_price1"
+            android:layout_toEndOf="@+id/wishlist_image"
+            android:paddingStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/wishlist_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/delete" />
+        
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

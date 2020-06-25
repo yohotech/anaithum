@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Fragment.OrdersFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp">
+            <TextView
+                android:id="@+id/active_order_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACTIVE ORDERS"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="10dp"
+                android:paddingStart="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rCurrentOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/active_order_title"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/past_order_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAST ORDERS"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:paddingStart="20dp"
+                android:layout_below="@+id/rCurrentOrders"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rPastOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/past_order_title"/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+</RelativeLayout>

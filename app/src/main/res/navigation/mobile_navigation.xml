@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+
+        <!--<action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />-->
+        <action
+            android:id="@+id/action_nav_home_to_nav_cart"
+            app:destination="@id/nav_cart" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_wishlist"
+            app:destination="@id/nav_wishlist" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_search"
+            app:destination="@id/nav_search" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_products"
+            app:destination="@id/nav_products" />
+
+    </fragment>
+    <!--<fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+
+    </fragment>-->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_nav_edit_profile"
+            app:destination="@id/nav_edit_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.CategoriesFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.OrdersFragment"
+        android:label="My Orders"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_nav_orders_to_nav_orderDetails"
+            app:destination="@id/nav_orderDetails" />
+        <action
+            android:id="@+id/action_nav_orders_to_nav_track"
+            app:destination="@id/nav_track" />
+        <action
+            android:id="@+id/action_nav_orders_to_nav_return"
+            app:destination="@id/nav_return" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_wishlist"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.WishlistFragment"
+        android:label="Wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+    <fragment
+        android:id="@+id/nav_terms"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.TermsFragment"
+        android:label="@string/menu_terms"
+        tools:layout="@layout/fragment_terms" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.SupportFragment"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cart"
+        android:label="@string/cart"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.CartFragment"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_nav_cart_to_nav_checkout"
+            app:destination="@id/nav_checkout" />
+        <action
+            android:id="@+id/action_nav_cart_self"
+            app:destination="@id/nav_cart" />
+        <action
+            android:id="@+id/action_nav_cart_to_nav_blank"
+            app:destination="@id/nav_blank" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_orderDetails"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.OrderDetailsFragment"
+        android:label="Order Details"
+        tools:layout="@layout/fragment_order_details" />
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_nav_search_to_nav_products_detail"
+            app:destination="@id/nav_products_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_otp"
+            app:destination="@id/nav_otp" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_otp"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.OtpFragment"
+        android:label="Verify OTP" >
+        <action
+            android:id="@+id/action_nav_otp_to_nav_add_detail"
+            app:destination="@id/nav_add_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_coupon"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.CouponFragment"
+        android:label="Coupons"
+        tools:layout="@layout/fragment_coupon" />
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout" >
+        <action
+            android:id="@+id/action_nav_checkout_to_nav_add_address"
+            app:destination="@id/nav_add_address" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_products_detail"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.ProductsDetailed"
+
+        tools:layout="@layout/fragment_products_detailed" >
+        <action
+            android:id="@+id/action_nav_products_detail_to_nav_cart"
+            app:destination="@id/nav_cart" />
+        <action
+            android:id="@+id/action_nav_products_detail_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.ProductsFragment"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_nav_products_to_nav_products_detail"
+            app:destination="@id/nav_products_detail" />
+        <action
+            android:id="@+id/action_nav_products_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_address"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.AddAddressFragment"
+        android:label="Shipping Address"
+        tools:layout="@layout/fragment_add_address" >
+        <action
+            android:id="@+id/action_nav_add_address_to_nav_checkout"
+            app:destination="@id/nav_checkout" />
+        <action
+            android:id="@+id/action_nav_add_address_to_nav_blank"
+            app:destination="@id/nav_blank" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_detail"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.AddDetailsFragment"
+        android:label="Profile Details"
+        tools:layout="@layout/fragment_add_details" />
+    <fragment
+        android:id="@+id/nav_track"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.TrackOrderFragment"
+        android:label="Track Order"
+        tools:layout="@layout/fragment_track_order" />
+    <fragment
+        android:id="@+id/nav_return"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.ReturnItemsFragment"
+        android:label="Return Products"
+        tools:layout="@layout/fragment_return_items" />
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.EditProfileFragment"
+        android:label="Edit Profile" >
+        <action
+            android:id="@+id/action_nav_edit_profile_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_blank"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.BlankFragment"
+        android:label="Checkout" >
+        <action
+            android:id="@+id/action_nav_blank_to_nav_add_address"
+            app:destination="@id/nav_add_address" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.yoho.anaithumfinal.ui.Fragment.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+
+</navigation>

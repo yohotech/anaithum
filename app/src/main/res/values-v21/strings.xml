@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_categories">Categories</string>
+    <string name="menu_orders">My Orders</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="menu_support">Support Desk</string>
+    <string name="menu_terms"><![CDATA[Terms & Conditions]]></string>
+    <string name="logout">Logout</string>
+    <string name="search_hint">Search</string>
+    <string name="shop_category">Shop By Category</string>
+    <string name="cart">Cart</string>
+    <string name="menu_cart">Cart</string>
+    <string name="coupon">Coupons</string>
+    <string name="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.  Distinctio eaque incidunt quibusdam explicabo recusandae  assumenda aliquam, harum, quod optio pariatur natus rerum vel,  voluptates labore veritatis praesentium aut non rem corporis debitis  unde nemo animi obcaecati! Numquam asperiores error quis. Asperiores  suscipit repellendus ullam iusto ad, maiores distinctio autem et.</string>
+    <string name="discount_symbol">% offer</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="area">Area</string>
+    <string name="address">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="alternate_mobile">Alternate Mobile</string>
+</resources>

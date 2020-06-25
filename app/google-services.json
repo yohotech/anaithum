@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "483942661656",
+    "firebase_url": "https://anaithum-c3c52.firebaseio.com",
+    "project_id": "anaithum-c3c52",
+    "storage_bucket": "anaithum-c3c52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483942661656:android:b269d2a948794ea63dcd6d",
+        "android_client_info": {
+          "package_name": "com.yoho.anaithumfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483942661656-rm4ene2riqait8cpvobbjgjio3dm4a0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFEAyKA8791sX8wXzAKTeq-Ei8RK69Nuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483942661656-rm4ene2riqait8cpvobbjgjio3dm4a0q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

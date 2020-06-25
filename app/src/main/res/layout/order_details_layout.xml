@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/header_pname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_below="@+id/header_pname">
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/header"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/pUnits"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:text="UNITS"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_column="1"/>
+            <TextView
+                android:id="@+id/pDprice"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:text="PRICE"
+                android:layout_column="2"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:id="@+id/pTax"
+                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_weight="1"
+                android:text="TAX"
+                android:gravity="center"
+                android:layout_column="3"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:id="@+id/pSubTotal"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:text="SUBTOTAL"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:layout_marginEnd="20dp"
+                android:textSize="12sp"
+                android:layout_column="4"
+                android:textColor="@color/colorBlack"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>

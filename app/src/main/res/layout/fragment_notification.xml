@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="60dp"
+    tools:context=".ui.Fragment.NotificationFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/rNotification"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/tv_No_Notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Notifications available"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+
+</FrameLayout>
